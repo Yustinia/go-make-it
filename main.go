@@ -11,6 +11,7 @@ func main() {
 		panic(err)
 	}
 
+	createTemplate(cwd, templates["python"])
 }
 
 func createTemplate(cwd string, template []string) {

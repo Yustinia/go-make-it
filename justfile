@@ -7,11 +7,11 @@ default:
 
 # run
 run:
-    go run {{ entrypt }}
+    go run .
 
 # build go-make-it
 build:
-    go build -o {{ bin_name }} {{ entrypt }}
+    go build -o {{ bin_name }} .
 
 # clean build artifs
 clean:
