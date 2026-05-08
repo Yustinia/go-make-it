@@ -1,5 +1,4 @@
-entrypt := "main.go"
-bin_name := "gmk"
+binName := "gmk"
 
 # list recipes
 default:
@@ -11,8 +10,8 @@ run:
 
 # build go-make-it
 build:
-    go build -o {{ bin_name }} .
+    go build -o {{ binName }} .
 
 # clean build artifs
 clean:
-    rm -rv {{ bin_name }}
+    rm -rv {{ binName }}
