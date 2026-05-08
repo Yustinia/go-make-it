@@ -24,12 +24,23 @@ func main() {
 }
 
 func validateArgs() string {
-	if len(os.Args) != 2 {
-		fmt.Println("Usage: gmk <language>")
+	if len(os.Args) < 2 {
+		printHelp()
 		os.Exit(1)
 	}
 
-	return os.Args[1]
+	arg := os.Args[1]
+
+	switch arg {
+	case "--help", "-h":
+		printHelp()
+		os.Exit(0)
+	case "--list", "-l":
+		printList()
+		os.Exit(0)
+	}
+
+	return arg
 }
 
 func createTemplate(cwd string, template []string) {
