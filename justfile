@@ -15,3 +15,7 @@ build:
 # clean build artifs
 clean:
     rm -rv {{ binName }}
+
+# install
+install: build
+    mv -v {{ binName }} ~/.local/bin/{{ binName }}
