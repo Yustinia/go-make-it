@@ -20,6 +20,28 @@ Both produce a binary named `gmk` in the current directory.
 
 ---
 
+## Install
+
+**Using `just`:**
+```bash
+just install
+```
+
+Automatically builds and moves the binary to `~/.local/bin/gmk`.
+
+**Manual:**
+```bash
+go build -o gmk .
+mv -v gmk ~/.local/bin/gmk
+```
+
+> **Note:** Ensure `~/.local/bin` is in your `$PATH`:
+> ```bash
+> echo $PATH | grep .local/bin
+> ```
+
+---
+
 ## Usage
 
 ```bash
