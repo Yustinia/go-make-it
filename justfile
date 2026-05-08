@@ -16,6 +16,10 @@ build:
 clean:
     rm -rv {{ binName }}
 
-# install
+# stable install
 install: build
     mv -v {{ binName }} ~/.local/bin/{{ binName }}
+
+# install via symlink (development)
+dev-install: build
+    ln -sf $(pwd)/{{ binName }} ~/.local/bin/{{ binName }}
