@@ -1,4 +1,4 @@
-binName := "gmk"
+binName := "makeit"
 
 # list recipes
 default:
