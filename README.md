@@ -13,10 +13,10 @@ just build
 
 **Using `go build`:**
 ```bash
-go build -o gmk .
+go build -o makeit .
 ```
 
-Both produce a binary named `gmk` in the current directory.
+Both produce a binary named `makeit` in the current directory.
 
 ---
 
@@ -27,12 +27,12 @@ Both produce a binary named `gmk` in the current directory.
 just install
 ```
 
-Automatically builds and moves the binary to `~/.local/bin/gmk`.
+Automatically builds and moves the binary to `~/.local/bin/makeit`.
 
 **Manual:**
 ```bash
-go build -o gmk .
-mv -v gmk ~/.local/bin/gmk
+go build -o makeit .
+mv -v makeit ~/.local/bin/makeit
 ```
 
 > **Note:** Ensure `~/.local/bin` is in your `$PATH`:
@@ -45,7 +45,7 @@ mv -v gmk ~/.local/bin/gmk
 ## Usage
 
 ```bash
-gmk <language>
+makeit <language>
 ```
 
 **Supported languages:**
@@ -62,12 +62,12 @@ gmk <language>
 
 **Examples:**
 ```bash
-gmk go
-gmk python
-gmk rust
+makeit go
+makeit python
+makeit rust
 ```
 
-Running `gmk <language>` creates the folder structure in the **current working directory**.
+Running `makeit <language>` creates the folder structure in the **current working directory**.
 
 ---
 
